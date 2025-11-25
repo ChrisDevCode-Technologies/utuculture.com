@@ -1,73 +1,95 @@
-# Welcome to your Lovable project
+# Utu Culture
 
-## Project info
+A modern web application built with React, Vite, and Tailwind CSS, designed to showcase cultural content through a gallery and events interface.
 
-**URL**: https://lovable.dev/projects/bd2a6f79-b27a-4967-9ff3-f530d107b100
+## 🚀 Technologies
 
-## How can I edit this code?
+- **Framework:** [React](https://react.dev/) with [TypeScript](https://www.typescriptlang.org/)
+- **Build Tool:** [Vite](https://vitejs.dev/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **UI Components:** [shadcn/ui](https://ui.shadcn.com/) (Radix UI)
+- **Routing:** [React Router](https://reactrouter.com/)
+- **State Management/Data Fetching:** [TanStack Query](https://tanstack.com/query/latest)
+- **Icons:** [Lucide React](https://lucide.dev/)
 
-There are several ways of editing your application.
+## 📋 Prerequisites
 
-**Use Lovable**
+Before you begin, ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (Version 18 or higher recommended)
+- [npm](https://www.npmjs.com/) (usually comes with Node.js) or [yarn](https://yarnpkg.com/) / [bun](https://bun.sh/)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/bd2a6f79-b27a-4967-9ff3-f530d107b100) and start prompting.
+## 🛠️ Installation
 
-Changes made via Lovable will be committed automatically to this repo.
+1.  **Clone the repository:**
+    ```bash
+    git clone <repository-url>
+    cd utuculture
+    ```
 
-**Use your preferred IDE**
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    # or
+    yarn install
+    # or
+    bun install
+    ```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 💻 Usage
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Development Server
+To start the development server with hot-reload:
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
 npm run dev
 ```
+Open [http://localhost:8080](http://localhost:8080) (or the port shown in your terminal) to view the app.
 
-**Edit a file directly in GitHub**
+### Production Build
+To build the application for production:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```bash
+npm run build
+```
+The build artifacts will be stored in the `dist/` directory.
 
-**Use GitHub Codespaces**
+### Preview Production Build
+To locally preview the production build:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```bash
+npm run preview
+```
 
-## What technologies are used for this project?
+### Linting
+To run the linter and check for code quality issues:
 
-This project is built with:
+```bash
+npm run lint
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 📂 Project Structure
 
-## How can I deploy this project?
+```
+utuculture/
+├── src/
+│   ├── components/     # Reusable UI components (shadcn/ui, etc.)
+│   ├── pages/          # Page components (Index, Gallery, Events)
+│   ├── lib/            # Utility functions
+│   ├── hooks/          # Custom React hooks
+│   ├── App.tsx         # Main application component with routing
+│   └── main.tsx        # Entry point
+├── public/             # Static assets
+├── index.html          # HTML entry point
+├── package.json        # Project dependencies and scripts
+├── tailwind.config.ts  # Tailwind CSS configuration
+├── tsconfig.json       # TypeScript configuration
+└── vite.config.ts      # Vite configuration
+```
 
-Simply open [Lovable](https://lovable.dev/projects/bd2a6f79-b27a-4967-9ff3-f530d107b100) and click on Share -> Publish.
+## 🤝 Contributing
 
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+1.  Fork the project
+2.  Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3.  Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4.  Push to the branch (`git push origin feature/AmazingFeature`)
+5.  Open a Pull Request

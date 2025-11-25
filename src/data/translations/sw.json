@@ -1,0 +1,93 @@
+{
+    "nav": {
+        "home": "Nyumbani",
+        "about": "Kuhusu",
+        "performances": "Maonyesho",
+        "services": "Huduma",
+        "gallery": "Galeria",
+        "events": "Matukio",
+        "booking": "Weka Nafasi",
+        "contact": "Wasiliana"
+    },
+    "hero": {
+        "title": "Wacheza Ngoma na Wapiga Ngoma wa Jadi",
+        "subtitle": "Kuleta Utamaduni Kuishi",
+        "bookNow": "Weka Nafasi",
+        "watchPerformances": "Tazama Maonyesho"
+    },
+    "performances": {
+        "title": "Maonyesho"
+    },
+    "about": {
+        "title": "Kuhusu Sisi",
+        "subtitle": "Kusherehekea Mila Kupitia Maonyesho",
+        "description": "Kushiriki mtetemo wetu: michezo ya jadi ya Kiafrika kupitia mapigo ya ngoma yenye nguvu, mielekeo yetu ya msingi, kutunza urithi wetu wa kitamaduni. Kufanya maonyesho katika matukio mbalimbali ya ndani na kimataifa. Kujitolea kwetu kwa uhalisia na ubora."
+    },
+    "services": {
+        "title": "Huduma",
+        "stagePerformances": "Maonyesho ya Jukwaani",
+        "culturalShowcases": "Maonyesho ya Kitamaduni",
+        "schoolWorkshops": "Warsha za Shule",
+        "weddingsEvents": "Harusi na Matukio",
+        "drummingClasses": "Madarasa ya Ngoma",
+        "costumeDisplays": "Maonyesho ya Mavazi"
+    },
+    "video": {
+        "title": "Tazama Video Yetu"
+    },
+    "gallery": {
+        "title": "Galeria",
+        "subtitle": "Chunguza wakati wetu waliochukuliwa kwenye maonyesho"
+    },
+    "events": {
+        "title": "Matukio na Shughuli",
+        "subtitle": "Jiunge nasi katika maonyesho yetu yanayokuja na sherehe za kitamaduni",
+        "event1": {
+            "title": "Tamasha la Kitamaduni 2024",
+            "date": "Desemba 15, 2024",
+            "time": "6:00 PM - 10:00 PM",
+            "location": "Kituo cha Utamaduni cha Jiji",
+            "description": "Sherehe ya kila mwaka ya muziki na michezo ya jadi"
+        },
+        "event2": {
+            "title": "Warsha za Shule",
+            "date": "Januari 10-12, 2025",
+            "time": "9:00 AM - 3:00 PM",
+            "location": "Shule Mbalimbali",
+            "description": "Warsha za ngoma na michezo kwa wanafunzi"
+        },
+        "event3": {
+            "title": "Maonyesho ya Jamii",
+            "date": "Februari 20, 2025",
+            "time": "7:00 PM - 9:00 PM",
+            "location": "Ukumbi wa Jamii",
+            "description": "Maonyesho ya jadi yanayosherehekea urithi wetu"
+        }
+    },
+    "booking": {
+        "title": "Weka Nafasi ya Maonyesho",
+        "subtitle": "Jaza fomu hapa chini na tutawasiliana nawe kupitia WhatsApp",
+        "name": "Jina Kamili",
+        "email": "Barua Pepe",
+        "phone": "Nambari ya Simu",
+        "date": "Tarehe ya Tukio",
+        "eventType": "Aina ya Tukio",
+        "message": "Maelezo Zaidi",
+        "submit": "Tuma Ombi"
+    },
+    "footer": {
+        "description": "Kusherehekea utamaduni wa Kiafrika kupitia michezo, muziki, na sanaa. Jiunge nasi kwenye safari ya mdundo na mila.",
+        "quickLinks": "Viungo vya Haraka",
+        "services": "Huduma Zetu",
+        "service1": "Maonyesho ya Kitamaduni",
+        "service2": "Warsha za Kucheza",
+        "service3": "Burudani ya Matukio",
+        "service4": "Elimu ya Kitamaduni",
+        "service5": "Matukio ya Kibinafsi",
+        "contact": "Wasiliana Nasi",
+        "address": "123 Barabara ya Utamaduni, Mtaa wa Sanaa, Jiji, Nchi",
+        "rights": "Haki zote zimehifadhiwa.",
+        "privacy": "Sera ya Faragha",
+        "terms": "Masharti ya Huduma"
+    }
+}

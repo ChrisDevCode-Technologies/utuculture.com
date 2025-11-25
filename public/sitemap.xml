@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://utuculture.com/</loc>
+    <lastmod>2025-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://utuculture.com/" />
+    <xhtml:link rel="alternate" hreflang="sw" href="https://utuculture.com/?lang=sw" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://utuculture.com/?lang=fr" />
+  </url>
+  
+  <!-- Gallery Page -->
+  <url>
+    <loc>https://utuculture.com/gallery</loc>
+    <lastmod>2025-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://utuculture.com/gallery" />
+    <xhtml:link rel="alternate" hreflang="sw" href="https://utuculture.com/gallery?lang=sw" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://utuculture.com/gallery?lang=fr" />
+  </url>
+  
+  <!-- Events Page -->
+  <url>
+    <loc>https://utuculture.com/events</loc>
+    <lastmod>2025-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://utuculture.com/events" />
+    <xhtml:link rel="alternate" hreflang="sw" href="https://utuculture.com/events?lang=sw" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://utuculture.com/events?lang=fr" />
+  </url>
+
+</urlset>

@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
-import { Navbar } from '@/components/Navbar';
 import { Calendar, MapPin, Clock } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { SEO } from '@/components/SEO';
 
 export default function Events() {
   const { t } = useTranslation();
@@ -30,9 +30,35 @@ export default function Events() {
     },
   ];
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": events.map((event, index) => ({
+      "@type": "Event",
+      "position": index + 1,
+      "name": event.title,
+      "description": event.description,
+      "startDate": event.date,
+      "location": {
+        "@type": "Place",
+        "name": event.location
+      },
+      "organizer": {
+        "@type": "PerformingGroup",
+        "name": "Utu Culture"
+      }
+    }))
+  };
+
   return (
     <div className="min-h-screen bg-background">
-      <Navbar />
+      <SEO
+        title="Events & Activities - Utu Culture Traditional Drummers & Dancers"
+        description="Join us at our upcoming traditional African dance and drumming performances. Cultural festivals, school workshops, community events, and celebrations."
+        keywords="african cultural events, traditional dance performances, drumming workshops, cultural festivals, community performances, african music events"
+        url="https://utuculture.com/events"
+        structuredData={structuredData}
+      />
       <main className="pt-32 pb-16">
         <div className="container mx-auto px-4">
           <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-4 text-center">

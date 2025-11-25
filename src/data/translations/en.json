@@ -1,0 +1,93 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "performances": "Performances",
+        "services": "Services",
+        "gallery": "Gallery",
+        "events": "Events",
+        "booking": "Book Us",
+        "contact": "Contact"
+    },
+    "hero": {
+        "title": "Traditional Dancers & Drummers",
+        "subtitle": "Bringing Culture to Life",
+        "bookNow": "Book Now",
+        "watchPerformances": "Watch Performances"
+    },
+    "performances": {
+        "title": "Performances"
+    },
+    "about": {
+        "title": "About Us",
+        "subtitle": "Celebrating Tradition Through Performance",
+        "description": "Sharing our vibration: traditional African dances through vibrant rhythmic drumbeats, our core movements, preserving our cultural heritage. Performing at various local sound in traditional dress at local and international events. Our dedication to authenticity and excellence."
+    },
+    "services": {
+        "title": "Services",
+        "stagePerformances": "Stage Performances",
+        "culturalShowcases": "Cultural Showcases",
+        "schoolWorkshops": "School Workshops",
+        "weddingsEvents": "Weddings & Events",
+        "drummingClasses": "Drumming Classes",
+        "costumeDisplays": "Costume Displays"
+    },
+    "video": {
+        "title": "Watch Our Video"
+    },
+    "gallery": {
+        "title": "Gallery",
+        "subtitle": "Explore our moments captured in performance"
+    },
+    "events": {
+        "title": "Events & Activities",
+        "subtitle": "Join us at our upcoming performances and cultural celebrations",
+        "event1": {
+            "title": "Cultural Festival 2024",
+            "date": "December 15, 2024",
+            "time": "6:00 PM - 10:00 PM",
+            "location": "City Cultural Center",
+            "description": "Annual celebration of traditional music and dance"
+        },
+        "event2": {
+            "title": "School Workshop Series",
+            "date": "January 10-12, 2025",
+            "time": "9:00 AM - 3:00 PM",
+            "location": "Various Schools",
+            "description": "Interactive drumming and dance workshops for students"
+        },
+        "event3": {
+            "title": "Community Performance",
+            "date": "February 20, 2025",
+            "time": "7:00 PM - 9:00 PM",
+            "location": "Community Hall",
+            "description": "Traditional performances celebrating our heritage"
+        }
+    },
+    "booking": {
+        "title": "Book a Performance",
+        "subtitle": "Fill out the form below and we'll contact you via WhatsApp",
+        "name": "Full Name",
+        "email": "Email Address",
+        "phone": "Phone Number",
+        "date": "Event Date",
+        "eventType": "Event Type",
+        "message": "Additional Details",
+        "submit": "Send Booking Request"
+    },
+    "footer": {
+        "description": "Celebrating African culture through dance, music, and art. Join us on a journey of rhythm and tradition.",
+        "quickLinks": "Quick Links",
+        "services": "Our Services",
+        "service1": "Cultural Performances",
+        "service2": "Dance Workshops",
+        "service3": "Event Entertainment",
+        "service4": "Cultural Education",
+        "service5": "Private Events",
+        "contact": "Contact Us",
+        "address": "123 Cultural Street, Arts District, City, Country",
+        "rights": "All rights reserved.",
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Service"
+    }
+}

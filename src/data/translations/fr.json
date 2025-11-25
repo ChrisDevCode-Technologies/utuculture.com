@@ -1,0 +1,93 @@
+{
+    "nav": {
+        "home": "Accueil",
+        "about": "À propos",
+        "performances": "Performances",
+        "services": "Services",
+        "gallery": "Galerie",
+        "events": "Événements",
+        "booking": "Réserver",
+        "contact": "Contact"
+    },
+    "hero": {
+        "title": "Danseurs et Percussionnistes Traditionnels",
+        "subtitle": "Donner Vie à la Culture",
+        "bookNow": "Réserver",
+        "watchPerformances": "Voir les Performances"
+    },
+    "performances": {
+        "title": "Performances"
+    },
+    "about": {
+        "title": "À Propos de Nous",
+        "subtitle": "Célébrer la Tradition par la Performance",
+        "description": "Partager notre vibration: danses africaines traditionnelles à travers des rythmes de tambour vibrants, nos mouvements fondamentaux, préservant notre patrimoine culturel. Se produisant lors d'événements locaux et internationaux. Notre dévouement à l'authenticité et à l'excellence."
+    },
+    "services": {
+        "title": "Services",
+        "stagePerformances": "Performances Scéniques",
+        "culturalShowcases": "Vitrines Culturelles",
+        "schoolWorkshops": "Ateliers Scolaires",
+        "weddingsEvents": "Mariages et Événements",
+        "drummingClasses": "Cours de Percussion",
+        "costumeDisplays": "Expositions de Costumes"
+    },
+    "video": {
+        "title": "Regarder Notre Vidéo"
+    },
+    "gallery": {
+        "title": "Galerie",
+        "subtitle": "Explorez nos moments capturés en performance"
+    },
+    "events": {
+        "title": "Événements et Activités",
+        "subtitle": "Rejoignez-nous lors de nos prochaines performances et célébrations culturelles",
+        "event1": {
+            "title": "Festival Culturel 2024",
+            "date": "15 décembre 2024",
+            "time": "18h00 - 22h00",
+            "location": "Centre Culturel de la Ville",
+            "description": "Célébration annuelle de la musique et de la danse traditionnelles"
+        },
+        "event2": {
+            "title": "Série d'Ateliers Scolaires",
+            "date": "10-12 janvier 2025",
+            "time": "9h00 - 15h00",
+            "location": "Diverses Écoles",
+            "description": "Ateliers interactifs de percussion et de danse pour les élèves"
+        },
+        "event3": {
+            "title": "Performance Communautaire",
+            "date": "20 février 2025",
+            "time": "19h00 - 21h00",
+            "location": "Salle Communautaire",
+            "description": "Performances traditionnelles célébrant notre patrimoine"
+        }
+    },
+    "booking": {
+        "title": "Réserver une Performance",
+        "subtitle": "Remplissez le formulaire ci-dessous et nous vous contacterons via WhatsApp",
+        "name": "Nom Complet",
+        "email": "Adresse Email",
+        "phone": "Numéro de Téléphone",
+        "date": "Date de l'Événement",
+        "eventType": "Type d'Événement",
+        "message": "Détails Supplémentaires",
+        "submit": "Envoyer la Demande"
+    },
+    "footer": {
+        "description": "Célébrer la culture africaine à travers la danse, la musique et l'art. Rejoignez-nous dans un voyage de rythme et de tradition.",
+        "quickLinks": "Liens Rapides",
+        "services": "Nos Services",
+        "service1": "Performances Culturelles",
+        "service2": "Ateliers de Danse",
+        "service3": "Divertissement d'Événements",
+        "service4": "Éducation Culturelle",
+        "service5": "Événements Privés",
+        "contact": "Contactez-Nous",
+        "address": "123 Rue Culturelle, Quartier des Arts, Ville, Pays",
+        "rights": "Tous droits réservés.",
+        "privacy": "Politique de Confidentialité",
+        "terms": "Conditions d'Utilisation"
+    }
+}
