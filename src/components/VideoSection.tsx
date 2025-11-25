@@ -17,7 +17,7 @@ export function VideoSection() {
               poster="/assets/images/15.jpg"
               preload="metadata"
             >
-              <source src="/assets/videos/VID-20250215-WA0026.mp4" type="video/mp4" />
+              <source src="/assets/videos/1.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>

@@ -30,9 +30,9 @@ export function BookingForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     const result = bookingSchema.safeParse(formData);
-    
+
     if (!result.success) {
       const newErrors: Record<string, string> = {};
       result.error.errors.forEach((err) => {
@@ -43,18 +43,35 @@ export function BookingForm() {
       setErrors(newErrors);
       return;
     }
-    
+
     setErrors({});
-    
-    const whatsappMessage = `*${t('booking.title')}*%0A%0A` +
-      `*${t('booking.name')}:* ${encodeURIComponent(formData.name)}%0A` +
-      `*${t('booking.email')}:* ${encodeURIComponent(formData.email)}%0A` +
-      `*${t('booking.phone')}:* ${encodeURIComponent(formData.phone)}%0A` +
-      `*${t('booking.date')}:* ${encodeURIComponent(formData.date)}%0A` +
-      `*${t('booking.eventType')}:* ${encodeURIComponent(formData.eventType)}%0A` +
-      `*${t('booking.message')}:* ${encodeURIComponent(formData.message)}`;
-    
-    window.open(`https://wa.me/1234567890?text=${whatsappMessage}`, '_blank');
+
+    // Create email content
+    const subject = encodeURIComponent(`Booking Request - ${formData.eventType}`);
+    const body = encodeURIComponent(
+      `Booking Request Details:\n\n` +
+      `Name: ${formData.name}\n` +
+      `Email: ${formData.email}\n` +
+      `Phone: ${formData.phone}\n` +
+      `Event Date: ${formData.date}\n` +
+      `Event Type: ${formData.eventType}\n` +
+      `Message: ${formData.message}\n\n` +
+      `---\n` +
+      `This booking request was submitted from the Utu Culture website.`
+    );
+
+    // Open default email client with pre-filled content
+    window.location.href = `mailto:info@utuculture.com?subject=${subject}&body=${body}`;
+
+    // Reset form after submission
+    setFormData({
+      name: '',
+      email: '',
+      phone: '',
+      date: '',
+      eventType: '',
+      message: '',
+    });
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
