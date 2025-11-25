@@ -1,6 +1,4 @@
 import { useTranslation } from 'react-i18next';
-import { Play } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 
 export function VideoSection() {
   const { t } = useTranslation();
@@ -12,14 +10,20 @@ export function VideoSection() {
           {t('video.title')}
         </h2>
         <div className="max-w-4xl mx-auto">
-          <div className="aspect-video bg-earth-dark/50 rounded-2xl shadow-2xl flex items-center justify-center">
-            <Button
-              size="lg"
-              className="rounded-full w-24 h-24 bg-primary hover:bg-primary/90"
+          <div className="aspect-video bg-earth-dark/50 rounded-2xl shadow-2xl overflow-hidden">
+            <video
+              controls
+              className="w-full h-full object-cover"
+              poster="/assets/images/15.jpg"
+              preload="metadata"
             >
-              <Play className="w-12 h-12 text-white fill-white" />
-            </Button>
+              <source src="/assets/videos/VID-20250215-WA0026.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
+          <p className="text-white/80 mt-4 text-sm">
+            Experience our traditional performances
+          </p>
         </div>
       </div>
     </section>

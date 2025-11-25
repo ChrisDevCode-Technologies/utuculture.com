@@ -3,10 +3,8 @@ export interface GalleryImage {
   alt: string;
 }
 
-export const galleryImages: GalleryImage[] = [
-  { src: '/src/assets/performance-1.jpg', alt: 'Performance 1' },
-  { src: '/src/assets/performance-2.jpg', alt: 'Performance 2' },
-  { src: '/src/assets/performance-3.jpg', alt: 'Performance 3' },
-  { src: '/src/assets/about-group.jpg', alt: 'Group Photo' },
-  { src: '/src/assets/hero-dancers.jpg', alt: 'Dancers' },
-];
+// Generate all 32 images from public/assets/images/
+export const galleryImages: GalleryImage[] = Array.from({ length: 32 }, (_, i) => ({
+  src: `/assets/images/${i}.jpg`,
+  alt: `Utu Culture Traditional Performance ${i + 1}`,
+}));

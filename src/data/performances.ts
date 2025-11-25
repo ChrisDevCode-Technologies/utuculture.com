@@ -6,16 +6,16 @@ export interface PerformanceImage {
 
 export const performanceImages: PerformanceImage[] = [
   {
-    src: '/src/assets/performance-1.jpg',
+    src: '/assets/images/5.jpg',
     alt: 'Group performance',
     gridClass: 'lg:col-span-2 lg:row-span-2',
   },
   {
-    src: '/src/assets/performance-2.jpg',
+    src: '/assets/images/14.jpg',
     alt: 'Drummer performance',
   },
   {
-    src: '/src/assets/performance-3.jpg',
+    src: '/assets/images/18.jpg',
     alt: 'Solo dancer',
   },
 ];

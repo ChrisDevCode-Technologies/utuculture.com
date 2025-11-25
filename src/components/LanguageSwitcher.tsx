@@ -26,17 +26,22 @@ export function LanguageSwitcher() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" size="sm" className="gap-2">
+        <Button
+          variant="ghost"
+          size="sm"
+          className="gap-2 text-warm-cream hover:text-primary hover:bg-primary/10 transition-colors"
+        >
           <Globe className="h-4 w-4" />
-          <span>{currentLanguage?.name || 'English'}</span>
+          <span className="hidden sm:inline">{currentLanguage?.name || 'English'}</span>
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end">
+      <DropdownMenuContent align="end" className="bg-earth-dark border-primary/20">
         {languages.map((lang) => (
           <DropdownMenuItem
             key={lang.code}
             onClick={() => changeLanguage(lang.code)}
-            className={i18n.language === lang.code ? 'bg-accent' : ''}
+            className={`text-warm-cream hover:text-primary hover:bg-primary/10 cursor-pointer ${i18n.language === lang.code ? 'bg-primary/20 text-primary' : ''
+              }`}
           >
             {lang.name}
           </DropdownMenuItem>

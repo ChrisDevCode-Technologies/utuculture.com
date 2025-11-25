@@ -1,7 +1,4 @@
 import { useTranslation } from 'react-i18next';
-import performance1 from '@/assets/performance-1.jpg';
-import performance2 from '@/assets/performance-2.jpg';
-import performance3 from '@/assets/performance-3.jpg';
 
 export function Performances() {
   const { t } = useTranslation();
@@ -15,23 +12,26 @@ export function Performances() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
           <div className="lg:col-span-2 lg:row-span-2">
             <img
-              src={performance1}
+              src="/assets/images/5.jpg"
               alt="Group performance"
               className="w-full h-full object-cover rounded-2xl shadow-2xl"
+              loading="lazy"
             />
           </div>
           <div>
             <img
-              src={performance2}
+              src="/assets/images/14.jpg"
               alt="Drummer performance"
               className="w-full h-full object-cover rounded-2xl shadow-2xl"
+              loading="lazy"
             />
           </div>
           <div>
             <img
-              src={performance3}
+              src="/assets/images/18.jpg"
               alt="Solo dancer"
               className="w-full h-full object-cover rounded-2xl shadow-2xl"
+              loading="lazy"
             />
           </div>
         </div>

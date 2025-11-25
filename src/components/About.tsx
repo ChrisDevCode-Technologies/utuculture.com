@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next';
-import aboutImage from '@/assets/about-group.jpg';
 
 export function About() {
   const { t } = useTranslation();
@@ -10,9 +9,10 @@ export function About() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
           <div>
             <img
-              src={aboutImage}
+              src="/assets/images/6.jpg"
               alt="About us"
               className="w-full rounded-2xl shadow-2xl"
+              loading="lazy"
             />
           </div>
           <div className="space-y-6">

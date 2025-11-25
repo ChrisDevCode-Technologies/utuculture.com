@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { Facebook, Instagram, Youtube, Mail, Phone, MapPin } from 'lucide-react';
+import { LanguageSwitcher } from '@/components/LanguageSwitcher';
 
 export function Footer() {
     const { t } = useTranslation();
@@ -144,19 +145,22 @@ export function Footer() {
                         <p className="text-warm-cream/60 text-sm">
                             © {currentYear} Utu Culture. {t('footer.rights', 'All rights reserved.')}
                         </p>
-                        <div className="flex gap-6 text-sm">
+                        <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6">
                             <a
                                 href="/privacy"
-                                className="text-warm-cream/60 hover:text-primary transition-colors duration-200"
+                                className="text-warm-cream/60 hover:text-primary transition-colors duration-200 text-sm"
                             >
                                 {t('footer.privacy', 'Privacy Policy')}
                             </a>
                             <a
                                 href="/terms"
-                                className="text-warm-cream/60 hover:text-primary transition-colors duration-200"
+                                className="text-warm-cream/60 hover:text-primary transition-colors duration-200 text-sm"
                             >
                                 {t('footer.terms', 'Terms of Service')}
                             </a>
+                            <div className="border-l border-primary/20 pl-4 md:pl-6">
+                                <LanguageSwitcher />
+                            </div>
                         </div>
                     </div>
                 </div>
