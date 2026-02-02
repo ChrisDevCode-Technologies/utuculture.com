@@ -15,7 +15,7 @@ export default function Gallery() {
     "description": "Photo gallery of traditional African dance and drumming performances by Utu Culture",
     "image": galleryImages.map(img => ({
       "@type": "ImageObject",
-      "url": `https://utuculture.com${img.src}`,
+      "url": `https://utuculture.com/assets/optimized/jpeg/${img.id}-1200.jpg`,
       "description": img.alt
     }))
   };
@@ -64,13 +64,25 @@ export default function Gallery() {
                 className="group relative overflow-hidden rounded-lg aspect-square bg-earth-brown/20 cursor-pointer hover:scale-105 transition-transform duration-300"
                 onClick={() => openLightbox(index)}
               >
-                <img
-                  src={image.src}
-                  alt={image.alt}
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                  decoding="async"
-                />
+                <picture className="w-full h-full block">
+                  <source
+                    type="image/avif"
+                    srcSet={`/assets/optimized/avif/${image.id}-480.avif 480w, /assets/optimized/avif/${image.id}-800.avif 800w, /assets/optimized/avif/${image.id}-1200.avif 1200w`}
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
+                  <source
+                    type="image/webp"
+                    srcSet={`/assets/optimized/webp/${image.id}-480.webp 480w, /assets/optimized/webp/${image.id}-800.webp 800w, /assets/optimized/webp/${image.id}-1200.webp 1200w`}
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
+                  <img
+                    src={`/assets/optimized/jpeg/${image.id}-800.jpg`}
+                    alt={image.alt}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
                 <div className="absolute inset-0 bg-gradient-to-t from-earth-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                   <p className="text-warm-cream text-sm font-medium">{image.alt}</p>
                 </div>
@@ -117,12 +129,16 @@ export default function Gallery() {
           </button>
 
           <div className="max-w-7xl max-h-[90vh] w-full h-full flex items-center justify-center" onClick={(e) => e.stopPropagation()}>
-            <img
-              src={galleryImages[selectedImage].src}
-              alt={galleryImages[selectedImage].alt}
-              className="max-w-full max-h-full object-contain"
-              loading="eager"
-            />
+            <picture>
+              <source type="image/avif" srcSet={`/assets/optimized/avif/${galleryImages[selectedImage].id}-1200.avif 1200w, /assets/optimized/avif/${galleryImages[selectedImage].id}-2000.avif 2000w`} sizes="100vw" />
+              <source type="image/webp" srcSet={`/assets/optimized/webp/${galleryImages[selectedImage].id}-1200.webp 1200w, /assets/optimized/webp/${galleryImages[selectedImage].id}-2000.webp 2000w`} sizes="100vw" />
+              <img
+                src={`/assets/optimized/jpeg/${galleryImages[selectedImage].id}-2000.jpg`}
+                alt={galleryImages[selectedImage].alt}
+                className="max-w-full max-h-full object-contain"
+                loading="eager"
+              />
+            </picture>
           </div>
 
           <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white text-sm">

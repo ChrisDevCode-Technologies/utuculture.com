@@ -10,11 +10,11 @@ export function VideoSection() {
           {t('video.title')}
         </h2>
         <div className="max-w-4xl mx-auto">
-          <div className="aspect-video bg-earth-dark/50 rounded-2xl shadow-2xl overflow-hidden">
+            <div className="aspect-video bg-earth-dark/50 rounded-2xl shadow-2xl overflow-hidden">
             <video
               controls
               className="w-full h-full object-cover"
-              poster="/assets/images/15.jpg"
+              poster="/assets/optimized/jpeg/15-1200.jpg"
               preload="metadata"
             >
               <source src="/assets/videos/1.mp4" type="video/mp4" />

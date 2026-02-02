@@ -3,10 +3,10 @@ import { Button } from '@/components/ui/button';
 import { useState, useEffect } from 'react';
 
 const heroImages = [
-  '/assets/images/1.jpg',
-  '/assets/images/23.jpg',
-  '/assets/images/26.jpg',
-  '/assets/images/29.jpg',
+  '0',
+  '23',
+  '26',
+  '29',
 ];
 
 export function Hero() {
@@ -41,11 +41,25 @@ export function Hero() {
             className={`absolute inset-0 w-full h-full transition-opacity duration-1000 ${index === currentImageIndex ? 'opacity-100' : 'opacity-0'
               }`}
           >
-            <img
-              src={image}
-              alt={`Hero slide ${index + 1}`}
-              className="absolute top-0 left-0 w-full h-full object-cover"
-            />
+            <picture className="absolute top-0 left-0 w-full h-full object-cover block">
+              <source
+                type="image/avif"
+                srcSet={`/assets/optimized/avif/${image}-800.avif 800w, /assets/optimized/avif/${image}-1200.avif 1200w, /assets/optimized/avif/${image}-2000.avif 2000w`}
+                sizes="100vw"
+              />
+              <source
+                type="image/webp"
+                srcSet={`/assets/optimized/webp/${image}-800.webp 800w, /assets/optimized/webp/${image}-1200.webp 1200w, /assets/optimized/webp/${image}-2000.webp 2000w`}
+                sizes="100vw"
+              />
+              <img
+                src={`/assets/optimized/jpeg/${image}-1200.jpg`}
+                alt={`Hero slide ${index + 1}`}
+                className="absolute top-0 left-0 w-full h-full object-cover"
+                loading={index === 0 ? 'eager' : 'lazy'}
+                decoding="async"
+              />
+            </picture>
           </div>
         ))}
         <div className="absolute inset-0 bg-black/60" />
