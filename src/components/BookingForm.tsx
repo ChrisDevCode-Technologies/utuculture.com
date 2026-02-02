@@ -16,7 +16,13 @@ const bookingSchema = z.object({
   message: z.string().trim().max(1000),
 });
 
-export function BookingForm() {
+type BookingFormProps = {
+  embedUrl?: string | null;
+  embedHTML?: string | null; // raw HTML embed (dangerous, use with caution)
+  height?: number;
+};
+
+export function BookingForm({ embedUrl, embedHTML, height = 700 }: BookingFormProps = {}) {
   const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: '',
@@ -83,6 +89,49 @@ export function BookingForm() {
       setErrors(prev => ({ ...prev, [e.target.name]: '' }));
     }
   };
+  // Determine embed from props first, then fallback to Vite env variables
+  const envEmbedUrl = embedUrl ?? (import.meta.env.VITE_BOOKING_FORM_EMBED_URL as string | undefined) ?? null;
+  const envEmbedHTML = embedHTML ?? (import.meta.env.VITE_BOOKING_FORM_EMBED_HTML as string | undefined) ?? null;
+
+  // If an embed URL or raw HTML is provided, render that instead of the local form
+  if (envEmbedUrl || envEmbedHTML) {
+    return (
+      <section id="booking" className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <Card className="max-w-3xl mx-auto bg-card border-primary/20">
+            <CardHeader>
+              <CardTitle className="text-4xl text-center text-foreground">{t('booking.title')}</CardTitle>
+              <CardDescription className="text-center text-muted-foreground">{t('booking.subtitle')}</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="w-full">
+                {envEmbedUrl && (
+                  <div className="w-full" style={{ minHeight: `${height}px` }}>
+                    <iframe
+                      title="Booking Form"
+                      src={envEmbedUrl}
+                      className="w-full border-0"
+                      style={{ height: `${height}px` }}
+                      loading="lazy"
+                      allowFullScreen
+                    />
+                  </div>
+                )}
+
+                {envEmbedHTML && (
+                  <div
+                    className="w-full"
+                    // eslint-disable-next-line react/no-danger
+                    dangerouslySetInnerHTML={{ __html: envEmbedHTML }}
+                  />
+                )}
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section id="booking" className="py-20 bg-muted/30">
