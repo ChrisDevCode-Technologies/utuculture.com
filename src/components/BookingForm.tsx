@@ -67,7 +67,7 @@ export function BookingForm({ embedUrl, embedHTML, height = 700 }: BookingFormPr
     );
 
     // Open default email client with pre-filled content
-    window.location.href = `mailto:info@utuculture.com?subject=${subject}&body=${body}`;
+  window.location.href = `mailto:info@utu.com?subject=${subject}&body=${body}`;
 
     // Reset form after submission
     setFormData({

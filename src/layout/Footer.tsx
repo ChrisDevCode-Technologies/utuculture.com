@@ -112,28 +112,28 @@ export function Footer() {
                         <h4 className="text-lg font-semibold text-primary">{t('footer.contact', 'Contact Us')}</h4>
                         <div className="flex flex-col space-y-3">
                             <a
-                                href="mailto:info@culturalrhythms.com"
+                                href="mailto:info@utu.com"
                                 className="flex items-center gap-3 text-warm-cream/80 hover:text-primary transition-colors duration-200 text-sm group"
                             >
                                 <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                                     <Mail className="w-4 h-4 text-primary" />
                                 </div>
-                                <span>info@culturalrhythms.com</span>
+                                <span>info@utu.com</span>
                             </a>
                             <a
-                                href="tel:+1234567890"
+                                href="tel:+254743203212"
                                 className="flex items-center gap-3 text-warm-cream/80 hover:text-primary transition-colors duration-200 text-sm group"
                             >
                                 <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                                     <Phone className="w-4 h-4 text-primary" />
                                 </div>
-                                <span>+1 (234) 567-890</span>
+                                <span>+254 743 203 212 / +255 740 703 212</span>
                             </a>
                             <div className="flex items-start gap-3 text-warm-cream/80 text-sm">
                                 <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
                                     <MapPin className="w-4 h-4 text-primary" />
                                 </div>
-                                <span>{t('footer.address', '123 Cultural Street, Arts District, City, Country')}</span>
+                                <span>{t('footer.address', 'Zanzibar, Tanzania')}</span>
                             </div>
                         </div>
                     </div>

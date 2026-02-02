@@ -30,10 +30,10 @@ export const socialLinks: SocialLink[] = [
 ];
 
 export const contactInfo: ContactInfo = {
-  email: 'info@culturalrhythms.com',
-  phone: '+1234567890',
-  phoneDisplay: '+1 (234) 567-890',
-  address: '123 Cultural Street, Arts District, City, Country',
+  email: 'info@utu.com',
+  phone: '+254743203212',
+  phoneDisplay: '+254 743 203 212 / +255 740 703 212',
+  address: 'Zanzibar, Tanzania',
 };
 
 export const brandInfo = {
